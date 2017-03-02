@@ -1,0 +1,48 @@
+.wrapper
+  width 90%
+  margin 3em auto
+.owl
+  &-carousel
+    position relative
+  &-nav
+    display flex
+    justify-content space-between
+    width calc(100% + 36px + 20px)
+    position absolute
+    left calc(-16px - 10px)
+    top calc(50% - 19px - 1em)
+  &-dots
+    display flex
+    width 50%
+    margin 1em auto
+    justify-content center
+    position relative
+  &-prev
+    width 18px
+    height 38px
+    background url('../img/prev.png')
+    transition .5s ease
+    &:hover
+      background url('../img/prev_hover.png')
+  &-next
+    width 18px
+    height 38px
+    background url('../img/next.png')
+    transition .5s ease
+    &:hover
+      background url('../img/next_hover.png')
+  &-dot
+    width 10px
+    height 10px
+    margin 5px
+    background #ababab
+    border-radius 50%
+    transition .5s ease
+    &:hover
+      background #cbcbcb
+    &.active
+      width 10px
+      height 10px
+      margin 5px
+      background #999999
+      border-radius 50%
